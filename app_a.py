@@ -11,8 +11,13 @@ def webhook():
     signature = request.headers.get('X-Signature')
     payload = request.get_data()
 
+    print(f"📥 Received Payload: {payload}")
+    print(f"📥 Received Signature: {signature}")
+
+
     expected_sig = hmac.new(SECRET.encode(), payload, hashlib.sha256).hexdigest()
 
+    print(f"✔️ Expected Signature: {expected_sig}")
     if signature != expected_sig:
         print("Unauthorized - signature mismatch")
         return {"error": "Unauthorized"}, 401

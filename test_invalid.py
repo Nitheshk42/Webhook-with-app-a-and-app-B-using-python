@@ -2,7 +2,7 @@ import requests
 import json
 
 def send_invalid_webhook():
-    url = "http://localhost:3000/webhook"
+    url = "https://webhook-with-app-a-and-app-b-using-python-production.up.railway.app/webhook"
 
     event = {
         "action": "user_input",
