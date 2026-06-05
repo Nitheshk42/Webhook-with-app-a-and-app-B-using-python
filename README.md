@@ -1,5 +1,3 @@
-# Webhook-with-app-a-and-app-B-using-python
-
 # Secure Webhook Implementation: App-to-App Communication
 
 A production-ready webhook system demonstrating secure inter-application communication using HMAC-SHA256 signature verification. This project teaches how real-world systems like GitHub, Stripe, and AWS communicate securely.
